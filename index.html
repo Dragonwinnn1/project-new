@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemesanan Makanan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Pemesanan Makanan</h1>
+
+        <div class="menu">
+            <div class="item">
+                <span>Nasi Goreng (Rp 25,000)</span>
+                <button onclick="kurangi(1)">-</button>
+                <span id="jumlah1">0</span>
+                <button onclick="tambah(1)">+</button>
+            </div>
+
+            <div class="item">
+                <span>Ayam Bakar (Rp 30,000)</span>
+                <button onclick="kurangi(2)">-</button>
+                <span id="jumlah2">0</span>
+                <button onclick="tambah(2)">+</button>
+            </div>
+
+            <div class="item">
+                <span>Soto Ayam  (Rp 20,000)</span>
+                <button onclick="kurangi(3)">-</button>
+                <span id="jumlah3">0</span>
+                <button onclick="tambah(3)">+</button>
+            </div>
+        </div>
+
+        <h3>Total: Rp <span id="total">0</span></h3>
+
+        <label for="alamat">Alamat Pengiriman:</label>
+        <input type="text" id="alamat" placeholder="Masukkan alamat...">
+
+        <button onclick="pesan()">Pesan Sekarang</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
